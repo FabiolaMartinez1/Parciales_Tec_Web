@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Usuarios</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>Tabla de Usuarios</h1>
+    <table id="tabla-usuarios" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+    // Datos ficticios
+    var datos = [
+        { nombre: "Juan Pérez", edad: 30, ciudad: "Ciudad A" },
+        { nombre: "María González", edad: 25, ciudad: "Ciudad B" },
+        { nombre: "David Smith", edad: 35, ciudad: "Ciudad C" },
+        { nombre: "Ana Rodríguez", edad: 28, ciudad: "Ciudad A" },
+        { nombre: "Carlos Martínez", edad: 40, ciudad: "Ciudad B" }
+    ];
+
+    // Llenar la tabla con datos ficticios
+    var tabla = $('#tabla-usuarios');
+    var tbody = tabla.find('tbody');
+
+    $.each(datos, function(index, usuario) {
+        var fila = $('<tr>');
+        fila.append('<td>' + usuario.nombre + '</td>');
+        fila.append('<td>' + usuario.edad + '</td>');
+        fila.append('<td>' + usuario.ciudad + '</td>');
+        tbody.append(fila);
+    });
+});
+
+    </script>
+</body>
+</html>

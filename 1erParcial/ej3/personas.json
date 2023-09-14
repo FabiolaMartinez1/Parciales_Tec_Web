@@ -1,0 +1,54 @@
+{
+    "personas" : [
+        {
+            "nombre": "Juan",
+            "edad": 20,
+            "ciudad": "Ciudad A"
+        },
+        {
+            "nombre": "Maria",
+            "edad": 30,
+            "ciudad": "Ciudad B"
+        },
+        {
+            "nombre": "Pedro",
+            "edad": 40,
+            "ciudad": "Ciudad C"
+        },
+        {
+            "nombre": "Laura",
+            "edad": 25,
+            "ciudad": "Ciudad D"
+        },
+        {
+            "nombre": "Carlos",
+            "edad": 35,
+            "ciudad": "Ciudad E"
+        },
+        {
+            "nombre": "Ana",
+            "edad": 45,
+            "ciudad": "Ciudad F"
+        },
+        {
+            "nombre": "Miguel",
+            "edad": 28,
+            "ciudad": "Ciudad G"
+        },
+        {
+            "nombre": "Sofia",
+            "edad": 32,
+            "ciudad": "Ciudad H"
+        },
+        {
+            "nombre": "Diego",
+            "edad": 22,
+            "ciudad": "Ciudad I"
+        },
+        {
+            "nombre": "Elena",
+            "edad": 27,
+            "ciudad": "Ciudad J"
+        }
+    ]
+}
