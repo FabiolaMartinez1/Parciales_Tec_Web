@@ -6,7 +6,7 @@ $("#btn").on("click", function(){
     $.getJSON("personas.json", function(datos){
         $.each(datos.personas, function(i, item){
             //console.log(item);
-            var fila = "<tr><td>" + item.nombre + "</td><td>" + item.apellido + "</td><td>" + item.edad + "</td></tr>";
+            var fila = "<tr><td>" + item.nombre + "</td><td>" + item.edad + "</td><td>" + item.ciudad + "</td></tr>";
             $("#tabla1 tbody").append(fila);
         });
     });
